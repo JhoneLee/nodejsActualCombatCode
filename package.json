@@ -1,0 +1,24 @@
+{
+  "name": "nodejsActualCombatCode",
+  "version": "1.0.0",
+  "description": "learn node.js actual combat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhoneLee/nodejsActualCombatCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhoneLee/nodejsActualCombatCode/issues"
+  },
+  "homepage": "https://github.com/JhoneLee/nodejsActualCombatCode#readme",
+  "dependencies": {
+    "mime": "^2.2.0",
+    "socket.io": "^2.0.4"
+  }
+}
