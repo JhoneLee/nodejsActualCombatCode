@@ -37,7 +37,7 @@ export function send404(res){
  * 根据文件类型发送文件
  * @param {object} res response对象
  * @param {string} fPath 文件路径
- * @param {object} fcontent 文件数据流
+ * @param {buffer} fcontent 文件数据流
  * @returns void
  */
 export function sendFile(res,fpath,fcontent){

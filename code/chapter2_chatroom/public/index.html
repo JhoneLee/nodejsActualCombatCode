@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.bootcss.com/seajs/3.0.2/sea-debug.js"></script>
+    </head>
+    <body>
+        <div>hia hia hia</div>
+        <script type="text/javascript">
+            seajs.config({
+                base:'./js/',
+                alias:{
+                    jquery:'jquery'
+                },
+                vars:{
+                    paths:'./js/'
+                }
+            });
+            seajs.use('{paths}chat',function(obj){
+                console.log(obj);
+                obj.say();
+            });
+        </script>
+    </body>
+</html>

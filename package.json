@@ -4,7 +4,7 @@
   "description": "learn node.js actual combat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "chapter2": "nodemon --experimental-modules ./code/chapter2_chatroom/lib/index.mjs"
   },
   "repository": {
     "type": "git",
