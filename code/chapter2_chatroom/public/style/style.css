@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0;}
+
+.content{
+    width: 1200px;
+    margin: 30px auto;
+}
+.room{
+    overflow: hidden;
+}
+.room-list,.msg{
+    float: left;
+}
+
+.room-list{
+    width: 300px;
+    height: 600px;
+    border:1px solid black;
+    box-sizing: border-box;
+}
+
+.msg{
+    width: 900px;
+    height: 600px;
+    background-color: black;
+}
+#sendMsg{
+    margin-top: 630px;
+}
+
+ul{
+    margin-top: 30px;
+}

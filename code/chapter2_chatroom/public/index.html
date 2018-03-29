@@ -2,10 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <title>简易聊天室</title>
         <script src="https://cdn.bootcss.com/seajs/3.0.2/sea-debug.js"></script>
+        <link href="./style/style.css" rel="stylesheet" />
     </head>
     <body>
-        <div>hia hia hia</div>
+        <div class="content">
+            <div class="room">
+                <div class="room-list"></div>
+                <div class="msg"></div>
+                <form id="sendMsg">
+                    <input id="msg" type="text" placeholder="输入信息" />
+                    <input id="btn" type="submit" value="发送"/>
+                </form>
+                <ul>
+                    <li>创建聊天室：/creat</li>
+                    <li>加入聊天室：/join</li>
+                    <li>修改昵称：/nick</li>
+                </ul>
+            </div>
+        </div>
         <script type="text/javascript">
             seajs.config({
                 base:'./js/',
