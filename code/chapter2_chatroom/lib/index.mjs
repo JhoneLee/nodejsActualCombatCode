@@ -11,6 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import utils from './utils';
 import serverObj from './server';
+import socket from './socketChat';
 // 创建一个静态服务器
 let cache = {};
 let __dirname = path.resolve('./code/chapter2_chatroom/lib');
@@ -23,7 +24,9 @@ let server = http.createServer((req,res)=>{
     }
     serverObj.serverStatic(res,cache,filePath);
 });
-
+// socket监听
+socket.listen(server);
+// 启动服务器
 server.listen(3033,()=>{
     console.log('server open');
 })

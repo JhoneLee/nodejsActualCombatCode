@@ -28,12 +28,16 @@ function listen(server){
 
         // handleRoomJoining(); // 处理加入聊天室指令
 
-        handleRoomCreating(); // 处理用户创建聊天室指令
+        // handleRoomCreating(); // 处理用户创建聊天室指令
         // 监听进入聊天室事件
         socket.on('rooms',(msg)=>{
             console.log(msg);
         });
 
-        handleClientDisconnection(); // 处理用户离线
+        // handleClientDisconnection(); // 处理用户离线
     });
+}
+
+export default {
+    listen
 }
